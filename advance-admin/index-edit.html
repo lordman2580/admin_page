@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Bootstrap Advance Admin Template</title>
+
+    <!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLES-->
+    <!--    <link href="assets/css/font-awesome.css" rel="stylesheet" />-->
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <!--CUSTOM BASIC STYLES-->
+    <link href="assets/css/basic.css" rel="stylesheet" />
+    <!--CUSTOM MAIN STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">自動販賣機後台管理系統</a>
+            </div>
+
+            <div class="header-right">
+
+
+                <!--<a href="message-task.html" class="btn btn-info" title="New Message"><b>30 </b><i class="fa fa-envelope-o fa-2x"></i></a>
+<a href="message-task.html" class="btn btn-primary" title="New Task"><b>40 </b><i class="fa fa-bars fa-2x"></i></a>-->
+                <a href="login.html" class="btn btn-primary" title="更換使用者"><i class="fa fa-exchange fa-2x"></i></a>
+                <a href="login.html" class="btn btn-danger" title="登出"><i class="fa fa-sign-out fa-2x"></i></a>
+
+
+            </div>
+        </nav>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li>
+                        <div class="user-img-div">
+                            <img src="assets/img/user.png" class="img-thumbnail" />
+
+                            <div class="inner-text">
+                                現在使用者名稱
+                                <br />
+                                <small>上次登入 : 2 星期以前.. </small>
+                            </div>
+                        </div>
+
+                    </li>
+
+
+                    <li>
+                        <a class="active-menu" href="index.html"><i class="fa fa-home "></i>後台管理首頁</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-desktop "></i>機臺管理 <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="panel-tabs.html"><i class="fa fa-dashboard"></i>機臺狀況</a>
+                            </li>
+                            <li>
+                                <a href="panel-tabs.html"><i class="fa fa-desktop "></i>機臺修改及補貨管理<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="panel-tabs.html"><i class="fa fa-pencil-square"></i>機臺修改</a>
+                                    </li>
+                                    <li>
+                                        <a href="panel-tabs.html"><i class="fa fa-pencil-square-o"></i>補貨管理</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-address-book"></i>員工管理 <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="panel-tabs.html"><i class="fa fa-outdent"></i>員工派遣管理</a>
+                            </li>
+                            <li>
+                                <a href="panel-tabs.html"><i class="fa fa-edit "></i>員工增刪修減管理</a>
+                            </li>
+                            <li>
+                                <a href="panel-tabs.html"><i class="fa fa-user-secret "></i>員工管理註冊</a>
+                            </li>
+                            <li>
+                                <a href="panel-tabs.html"><i class="fa fa-address-card "></i>員工請假管理</a>
+                            </li>
+
+
+
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-dollar "></i>收益管理 <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="panel-tabs.html"><i class="fa fa-dollar"></i>員工薪水管理</a>
+                            </li>
+                            <li>
+                                <a href="panel-tabs.html"><i class="fa fa-line-chart "></i>機臺收益</a>
+                            </li>
+                            <li>
+                                <a href="panel-tabs.html"><i class="fa fa-pie-chart "></i>收益報表</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+
+                <!-- /. ROW  -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="main-box mb-blue">
+                            <a href="#">
+                                <i class="fa fa-dashboard fa-5x"></i>
+                                <h5>機臺狀況</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="main-box mb-dull">
+                            <a href="#">
+                                <i class="fa fa-outdent fa-5x"></i>
+                                <h5>員工狀況</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="main-box mb-pink">
+                            <a href="#">
+                                <i class="fa fa-dollar fa-5x"></i>
+                                <h5>收益狀況</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /. ROW  -->
+
+                <div class="row">
+                    <div class="col-md-8">
+
+                        <!-- /. ROW  -->
+                        <hr />
+
+                        <div class="panel panel-default">
+
+                            <div id="carousel-example" class="carousel slide " data-ride="carousel" style="border: 5px solid #000;">
+
+                                <div class="carousel-inner">
+                                    <div class="item active">
+
+                                        <img src="assets/img/slideshow/1.jpg" alt="" />
+
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/img/slideshow/2.jpg" alt="" />
+
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/img/slideshow/3.jpg" alt="" />
+
+                                    </div>
+                                </div>
+                                <!--INDICATORS-->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example" data-slide-to="2"></li>
+                                </ol>
+                                <!--PREVIUS-NEXT BUTTONS-->
+                                <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.REVIEWS &  SLIDESHOW  -->
+
+
+                    <div class="col-md-4">
+                        <div id="placeholder"></div>
+                        <div id="flotcontainer"></div>
+                    </div>
+
+
+                    <!--/.Chat Panel End-->
+                </div>
+                <!-- /. ROW  -->
+
+
+                <!--<div class="row">
+
+                    <div class="col-md-8">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">
+                                <h4 class="list-group-item-heading">LIST GROUP HEADING</h4>
+                                <p class="list-group-item-text" style="line-height: 30px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </a>
+                        </div>
+                        <br />
+                         16:9 aspect ratio 
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <i class="fa fa-bell fa-fw"></i>Notifications Panel
+                            </div>
+
+                            <div class="panel-body">
+                                <div class="list-group">
+
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-twitter fa-fw"></i>3 New Followers
+                                        <span class="pull-right text-muted small"><em>12 minutes ago</em>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-envelope fa-fw"></i>Message Sent
+                                        <span class="pull-right text-muted small"><em>27 minutes ago</em>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-tasks fa-fw"></i>New Task
+                                        <span class="pull-right text-muted small"><em>43 minutes ago</em>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-upload fa-fw"></i>Server Rebooted
+                                        <span class="pull-right text-muted small"><em>11:32 AM</em>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-bolt fa-fw"></i>Server Crashed!
+                                        <span class="pull-right text-muted small"><em>11:13 AM</em>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-warning fa-fw"></i>Server Not Responding
+                                        <span class="pull-right text-muted small"><em>10:57 AM</em>
+                                        </span>
+                                    </a>
+
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-bolt fa-fw"></i>Server Crashed!
+                                        <span class="pull-right text-muted small"><em>11:13 AM</em>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-warning fa-fw"></i>Server Not Responding
+                                        <span class="pull-right text-muted small"><em>10:57 AM</em>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-shopping-cart fa-fw"></i>New Order Placed
+                                        <span class="pull-right text-muted small"><em>9:49 AM</em>
+                                        </span>
+                                    </a>
+                                </div>
+                                 /.list-group 
+                                <a href="#" class="btn btn-info btn-block">View All Alerts</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>-->
+                <!--/.Row-->
+                <hr />
+                <div class="row">
+
+                    <div class="col-md-8">
+
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>員工編號</th>
+                                        <th>姓名</th>
+                                        <th>今日狀態</th>
+                                        <th>目前進度</th>
+                                        <th>上繳金額</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><span class="label label-danger">Mark</span></td>
+                                        <td>上班</td>
+                                        <td>A機臺補貨中</td>
+                                        <td><span class="label label-info">100090</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Jacob</td>
+                                        <td>上班</td>
+                                        <td>B機臺補貨中</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Larry</td>
+                                        <td><span class="label label-danger">請假</span> </td>
+                                        <td>無</td>
+                                        <td>0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+                <!--/.Row-->
+                <hr />
+
+                <!--/.ROW-->
+
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+
+    <div id="footer-sec">
+        &copy; 2014 YourCompany | Design By : <a href="http://www.binarytheme.com/" target="_blank">BinaryTheme.com</a>
+    </div>
+    <!-- /. FOOTER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <!--    <script src="assets/js/jquery-1.10.2.js"></script>-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="assets/js/jquery.flot.min.js"></script>
+    <script src="assets/js/jquery.flot.pie.min.js"></script>
+
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+    <!--               -->
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var data = [{
+                    label: "可口可樂",
+                    data: 10
+                },
+                {
+                    label: "美麗果",
+                    data: 20
+                },
+                {
+                    label: "小熊餅乾",
+                    data: 30
+                },
+                {
+                    label: "茶裡王",
+                    data: 40
+                }
+            ];
+
+            var options = {
+                series: {
+                    pie: {
+
+                        show: true
+                    }
+                },
+                grid: {
+                    hoverable: true,
+                    clickable: true
+                }
+            };
+
+            $.plot('#flotcontainer', data, options);
+        });
+    </script>
+
+
+</body></html>
